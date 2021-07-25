@@ -1,5 +1,5 @@
 const Animal = {
-  category: (parent, args, ctx) => {
+  category: (parent, args, {categories}) => {
     let category = categories.find (
       category => category.id === parent.category
     );
